@@ -1,0 +1,35 @@
+{
+  "name": "smartcart-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "rm -r ./.next/; next dev",
+    "build": "next build",
+    "start": "forever start ./node_modules/.bin/next start -p 10001",
+    "stop": "forever stopall",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.428.0",
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.9",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "aws-sdk": "^2.1473.0",
+    "dynamoose": "^3.2.1",
+    "forever": "^0.14.2",
+    "framer-motion": "^4.1.17",
+    "next": "^11.1.4",
+    "next-auth": "^4.24.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "sha.js": "^2.4.11"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.27",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "typescript": "4.4.3"
+  }
+}
